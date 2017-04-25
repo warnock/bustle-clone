@@ -3,6 +3,6 @@
 
 <ul>
   {{#each model as |story|}}
-  <li>{{story.headline}}</li>
+  <li>{{story.headline}} <strong>- By {{story.author}}</strong></li>
   {{/each}}
 </ul>
