@@ -1,5 +1,5 @@
 <li>
-  {{story.headline}} <strong>- By {{story.author}}</strong>
+  {{#link-to 'story' story.id}} {{story.headline}} <strong>- By {{story.author}}</strong> {{/link-to}}
     {{#if isImageShowing}}
       <p><img src={{story.image}} alt={{story.heading}} {{action 'imageHide'}}></p>
     {{else}}
