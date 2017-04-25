@@ -3,6 +3,6 @@
 
 <ul>
   {{#each model as |story|}}
-  <li>{{story.headline}} <strong>- By {{story.author}}</strong></li>
+    {{story-tile story=story}}
   {{/each}}
 </ul>

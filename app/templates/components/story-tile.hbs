@@ -1,0 +1,8 @@
+<li>
+  {{story.headline}} <strong>- By {{story.author}}</strong>
+    {{#if isImageShowing}}
+      <p><img src={{story.image}} alt={{story.heading}} {{action 'imageHide'}}></p>
+    {{else}}
+      <button {{action 'imageShow'}}>Show image</button>
+    {{/if}}
+</li>
