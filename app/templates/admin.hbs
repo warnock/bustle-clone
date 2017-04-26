@@ -1,9 +1,10 @@
 <h1>Welcome to the admin portal</h1>
-<button>Add Story</button>
 <p>Pick which story to edit or delete:</p>
 
 <ul>
   {{#each model as |story|}}
-    <li>{{story.headline}}</li>
+      {{#link-to 'story' story.id}}<li>{{story.headline}}</li>{{/link-to}}
   {{/each}}
 </ul>
+
+{{new-story saveStory="saveStory"}}
